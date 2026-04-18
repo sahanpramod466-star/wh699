@@ -366,5 +366,5 @@ def system_diagnostic():
 if __name__ == '__main__':
     load_victims_db()
     system_diagnostic()
-     threading.Thread(target=lambda: app.run(host='0.0.0.0', port=8080, debug=False, use_reloader=False), daemon=True).start()
+    threading.Thread(target=lambda: app.run(host='0.0.0.0', port=8080, debug=False, use_reloader=False), daemon=True).start()
     dashboard_thread()
